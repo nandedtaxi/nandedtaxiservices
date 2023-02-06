@@ -1,0 +1,33 @@
+
+/* home crousel */
+#slideBtn {
+  background-color: rgba(255, 255, 0, 0.694);
+  border-radius: 10px;
+  border-color: 4px solid rgb(9, 217, 240);
+}
+#slideBtn:active {
+  background-color: #d7cd13f8;
+  box-shadow: 0 5px rgb(5, 5, 5);
+  transform: translateY(4px);
+}
+#call {
+  text-decoration: none;
+}
+#callContact {
+  text-decoration: none;
+  color: rgb(9, 217, 240);
+}
+h3 {
+  color: yellow;
+  text-shadow: 2px 2px black;
+}
+#frmHeading {
+  font-size: 2rem;
+  color: yellow;
+  text-shadow: 2px 2px black;
+}
+#or{
+  font-size: 2rem;
+  color: black;
+  text-shadow: 2px 2px black;
+}

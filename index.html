@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NandedTaxi</title>
+  <link rel="icon" type="image/x-icon" href="./img/navlogo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/countingHome.css">
+  <link rel="stylesheet" href="./css/form.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-warning" id="home">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="./img/navlogo.png" alt="NandedTaxi" height="30px" class="rounded">
+        <a class="navbar-brand" href="index.html">NandedTaxi</a>
+        <button1 class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button1>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/bookCab.html">Book Cab</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/aboutUs.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+
+  <!-- carousel -->
+  <div id="carouselExampleDark" class="carousel carousel-dark slide text-center" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button1 type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button1>
+      <button1 type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button1>
+      <button1 type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button1>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5000">
+        <img src="./img/carouselHome1.jpg" class="d-block w-100" alt="NandedTaxi" height="510px">
+        <div class="carousel-caption">
+          <h1>
+            <button1 id="slideBtn" type="button" class="text-dark"><a href="tel:+918237230920" id="call">Click to Call
+                Us</a></button1>
+          </h1>
+          <h3>Our Contact Number <a href="tel:+918237230920" id="callContact">8237230920</a></h3>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="./img/carouselHome2.jpg" class="d-block w-100" alt="NandedTaxi" height="510px">
+        <div class="carousel-caption">
+          <h1>
+            <button1 id="slideBtn" type="button" class="text-dark"><a href="tel:+918237230920" id="call">Click to Call
+                Us</a></button1>
+          </h1>
+          <h3>Best Taxi Services in a Reasonable Price</h3>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/carouselHome3.jpg" class="d-block w-100" alt="NandedTaxi" height="510px">
+        <div class="carousel-caption">
+          <h1>
+            <button1 id="slideBtn" type="button" class="text-dark"><a href="tel:+918237230920" id="call">Click to Call
+                Us</a></button1>
+          </h1>
+          <h3>Book the Best Taxi Services in Nanded City</h3>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- form  -->
+  <div class="container-fluid text-center mt-3 bg-warning bg-opacity-50" id="frmHeading">Submit This Form For Booking Your Taxi
+  </div>
+  <div class="container-sm bg-warning bg-opacity-50">
+    <form method="post" id="frmSubmit">
+      <div class="item">
+        <h4>Name</h4>
+        <div class="name-item">
+          <input type="text" name="fName" placeholder="First" required />
+          <input type="text" name="lName" placeholder="Last" required />
+        </div>
+      </div>
+      <div class="item">
+        <h4>Mobile Number</h4>
+        <input type="number" maxlength="10" name="mobileNumber" placeholder="123-456-7890" required />
+        <br>
+        <Small>please submit valid number</Small>
+      </div>
+      <div class="item">
+        <h4>Pickup Address</h4>
+        <input type="text" name="pickupStreetAddress" placeholder="Street address" />
+        <div class="city-item">
+          <input type="text" name="pickupCity" placeholder="City" />
+        </div>
+      </div>
+      <div class="question">
+        <h4>Vehicle</h4>
+        <div class="question-answer">
+          <div>
+            <input type="radio" value="none" id="radio_1" name="vehicle" />
+            <label for="radio_1" class="radio"><span>CAR (3-4 person)</span></label>
+          </div>
+          <div>
+            <input type="radio" value="none" id="radio_2" name="vehicle" />
+            <label for="radio_2" class="radio"><span>SUV (6-7 person)</span></label>
+          </div>
+          <div>
+            <input type="radio" value="none" id="radio_5" name="vehicle" />
+            <label for="radio_5" class="radio other"><span>other:</span></label>
+            <input class="other" type="text" name="otherCar" placeholder="please name a vehicle you want" />
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <h4>Pick Up Date</h4>
+        <input type="date" name="pickupDate" />
+      </div>
+      <div class="item">
+        <h4>Pick Up Time</h4>
+        <input type="time" name="pickupTime" />
+      </div>
+      <div class="item">
+        <h4>Destination</h4>
+        <input type="text" name="destinationStreetAddress" placeholder="Street address" />
+        <div class="city-item">
+          <input type="text" name="destinationCity" placeholder="City" />
+        </div>
+      </div>
+      <div class="item">
+        <h4>Notes</h4>
+        <textarea rows="3" name="notes"></textarea>
+      </div>
+      <div class="btn-block">
+        <button type="submit" id="btnSubmit">SEND</button>
+      </div>
+      <div id="msg"></div>
+    </form>
+  </div>
+
+  <!-- footer  -->
+  <div class="container-fuild  mt-2">
+    <footer class="footer">
+      <div class="container bottom_border">
+        <div class="row">
+          <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+            <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+            <!--headin5_amrc-->
+            <p><i class="fa fa-location-arrow"></i>Near MGM College, Namskar Chowk, Nanded </p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15073.45058569448!2d77.3304939!3d19.1793567!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd1d7c85467dac5%3A0x3d700bb615272435!2snandedtaxi!5e0!3m2!1sen!2sin!4v1675439424043!5m2!1sen!2sin"
+              width="200" height="200" style="border:0; display: flex; flex-direction: row;" allowfullscreen=""
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <br>
+            <p><i class="fa fa-phone">call us </i><a href="tel:+918237230920">+91-8237230920</a></p>
+            <p>Send E-mail <i class="fa fa fa-envelope"></i><a
+                href="https://mail.google.com/mail/?to=nandedtaxi1@gmail.com&bcc=admin@example.com&subject=Hey#compose"
+                target="_blank"> nandedtaxi1@gmail.com</a> </p>
+
+
+          </div>
+
+
+          <div class=" col-sm-4 col-md  col-6 col">
+            <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+            <!--headin5_amrc-->
+            <ul class="footer_ul_amrc">
+              <li><a href="tel:+918237230920">Click to Call Us</a></li>
+              <li><a href="https://wa.me/918237230920" target="_blank">Click to Whatsapp Us</a></li>
+              <li><a href="#frmHeading">Book online</a></li>
+            </ul>
+            <!--footer_ul_amrc ends here-->
+          </div>
+
+
+          <div class=" col-sm-4 col-md  col-12 col">
+            <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+            <!--headin5_amrc ends here-->
+
+            <ul class="footer_ul2_amrc">
+              <li><a><i class="fab fa-twitter fleft padding-right"></i> </a>
+                <p>Click to Follow us on <a href="https://www.facebook.com/profile.php?id=100086253583618"
+                    target="_blank">Facebook</a></p>
+              </li>
+              <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
+                <p>Click to Follow us on <a
+                    href="https://www.instagram.com/invites/contact/?i=gsouhhgooi1m&utm_content=pifxqpf"
+                    target="_blank">Instagram</a></p>
+              </li>
+            </ul>
+            <!--footer_ul2_amrc ends here-->
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <ul class="foote_bottom_ul_amrc">
+          <li><a href="#home">Home</a></li>
+          <li><a href="./pages/bookCab.html">Book Cab</a></li>
+          <li><a href="./pages/services.html">Services</a></li>
+          <li><a href="./pages/aboutUs.html">About Us</a></li>
+        </ul>
+        <!--foote_bottom_ul_amrc ends here-->
+        <p class="text-center">Copyright @2023 | Designed by <a href="#home">nandedtaxi.club</a></p>
+      </div>
+
+    </footer>
+  </div>
+
+  <script>
+    jQuery("#frmSubmit").on("submit", function (e) {
+      e.preventDefault();
+      jQuery("#msg").html("Please wait...");
+      jQuery("#btnSubmit").attr("disabled", true);
+      jQuery.ajax({
+        url: "https://script.google.com/macros/s/AKfycbz7ThvnPTB1d5xzx4V5oJhf1Sr6lRfPyLa7DPtSbosjRv9osjuj_io_h1IjG2zo2Ii5Tg/exec",
+        type: "post",
+        data: jQuery("#frmSubmit").serialize(),
+        success: function (result) {
+          jQuery("#frmSubmit")[0].reset();
+          jQuery("#msg").html("thank you!");
+          jQuery("#btnSubmit").attr("disabled", false);
+          alert("Thank You! For booking nandedtaxi.");
+          alert("For any Queries call Us on 08237230920");
+          //window.location.href='';
+        },
+      });
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
